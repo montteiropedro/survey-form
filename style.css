@@ -1,0 +1,178 @@
+/* GLOBAL ================================================== */
+:root {
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-grey: rgb(218, 218, 218);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    
+    background: linear-gradient(#1d2136cb, #9198e5);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    /* font-weight: 300; */
+    color: white;
+
+    text-align: center;
+}
+
+/* BODY ================================================== */
+
+/* section ---------------------------------------- */
+.container {
+    margin: 3rem auto;
+
+    height: 100%;
+    min-width: 300px;
+}
+
+.extra-info {
+    margin-left: 0.2rem;
+}
+
+/* Header ---------------------------------------- */
+header {
+    margin: 0 auto 1.5rem;
+
+    font-style: italic;
+}
+
+#title {
+    margin-bottom: 0.3rem;
+
+    font-size: 2rem;
+}
+
+/* Form ---------------------------------------- */
+#survey-form {
+    padding: 3rem 0.5rem;
+    border-radius: 0.25rem;
+
+    background-color: var(--color-darkblue-alpha);
+
+    text-align: left;
+}
+
+.form-section {
+    margin-bottom: 1rem;
+}
+
+.form-section-title {
+    margin-bottom: 0.3rem;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+}
+
+label {
+    margin-bottom: 0.3rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-config {
+    padding: 0.3rem 0.5rem;
+
+    width: 100%;
+    height: 2.125rem;
+
+    border: none;
+    border-radius: 0.25rem;
+
+    color: #495057;
+}
+
+.input-button-config {
+    margin-right: 0.3rem;
+
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+textarea.input-config {
+    height: 6.25rem;
+    width: 100%;
+}
+
+#submit {
+    height: 3rem;
+    width: 100%;
+
+    border: none;
+    border-radius: 0.25rem;
+
+    background: royalblue;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    cursor: pointer;
+}
+
+#submit:hover {
+    transform: scale(1.01);
+    background-color: rgb(93, 123, 212);
+}
+
+#footer {
+    padding: 0.5rem;
+
+    min-width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.6;
+
+    font-weight: 100;
+    font-size: 1rem;
+    color: white;
+}
+
+#footer a {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    
+    text-decoration: none;
+    color: white;
+}
+
+#linkedin-icon {
+    width: 1rem;
+}
+
+#footer a:hover > #linkedin-icon {
+    transform: scale(1.15);
+}
+
+/* MEDIA QUERIES ================================================== */
+@media only screen and (min-width: 500px) {
+    #survey-form {
+        padding: 3rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 590px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        max-width: 750px;
+    }
+}
