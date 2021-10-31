@@ -16,169 +16,173 @@
 </head>
 <body>
 
-    <main>
+    <div id="all-body-content">
 
-        <section class="container">
+        <main id="main-doc">
 
-            <header>
-                <h1 id="title">
-                    freeCodeCamp Survey Form
-                </h1>
-                <p id="description">
-                    Thank you for taking the time to help us improve the platform
-                </p>
-            </header>
+            <section class="container">
     
-            <form id="survey-form" action="">
-                
-                <div class="form-section">
-
-                    <label id="name-label" class="form-section-title" for="name">Name</label>
-                    <input id="name" class="input-config" type="text" placeholder="Name Surname" required />
-
-                </div>
-                
-                <div class="form-section">
-
-                    <label id="email-label" class="form-section-title" for="email">Email</label>
-                    <input id="email" class="input-config" type="email" placeholder="user@mail.com" required />
-
-                </div>
-                
-                <div class="form-section">
-
-                    <label id="number-label" class="form-section-title" for="number">Age <small class="extra-info">(optional)</small></label>
-                    <input id="number" class="input-config" type="number" min="18" max="100" placeholder="Your age here" />
-
-                </div>
-                
-                <div class="form-section">
-
-                    <label id="label-dropdown-1" class="form-section-title" for="dropdown">Which option best describes your current role?</label>
-                    <select id="dropdown" class="input-config" name="current-role" required>
-                        <option value="" selected disabled>Select Current Role</option>
-                        <option value="Student">Student</option>
-                        <option value="Full Time Job">Full Time Job</option>
-                        <option value="Full Time Learner">Full Time Learner</option>
-                        <option value="Prefer Not to Say">Prefer Not to Say</option>
-                        <option value="Other">Other</option>
-                    </select>
-
-                </div>
+                <header>
+                    <h1 id="title">
+                        freeCodeCamp Survey Form
+                    </h1>
+                    <p id="description">
+                        Thank you for taking the time to help us improve the platform
+                    </p>
+                </header>
+        
+                <form id="survey-form" action="">
+                    
+                    <div class="form-section">
     
-                <div class="form-section">
-
-                    <p class="form-section-title">Would you recommend freeCodeCamp to a friend?</p>
-
-                    <label>
-                        <input class="input-button-config" name="recommendation" type="radio" value="definitely" checked> Definitely
-                    </label>
-
-                    <label>
-                        <input class="input-button-config" name="recommendation" type="radio" value="maybe"> Maybe
-                    </label>
-
-                    <label>
-                        <input class="input-button-config" name="recommendation" type="radio" value="not-sure"> Not sure
-                    </label>
-
-                </div>
+                        <label id="name-label" class="form-section-title" for="name">Name</label>
+                        <input id="name" class="input-config" type="text" placeholder="Name Surname" required />
     
-                <div class="form-section">
-
-                    <label id="label-dropdown-fav-feature" class="form-section-title" for="dropdown-fav-feature">What is your favorite feature of freeCodeCamp?</label>
-                    <select id="dropdown-fav-feature" class="input-config" name="current-role" required>
-                        <option value="" selected disabled>Select an option</option>
-                        <option value="Challenges">Challenges</option>
-                        <option value="Projects">Projects</option>
-                        <option value="Community">Community</option>
-                        <option value="Open Source">Open Source</option>
-                    </select>
-
-                </div>
+                    </div>
+                    
+                    <div class="form-section">
     
-                <div class="form-section">
-
-                    <p class="form-section-title">What would you like to see improved? (Check all that apply)</p>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="front-end-projects"> Front-end Projects
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="back-end-projects"> Back-end Projects
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="data-visualization"> Data Visualization
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="challenges"> Challenges
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="open-source-community"> Open Source Community
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="gitter-help-rooms"> Gitter Help Rooms
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="videos"> Videos
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="city-meetups"> City Meetups
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="wiki"> Wiki
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="forum"> Forum
-                    </label>
-                    
-                    <label>
-                        <input class="input-button-config" name="skills" type="checkbox" value="additional-courses"> Additional Courses
-                    </label>
-
-                </div>
+                        <label id="email-label" class="form-section-title" for="email">Email</label>
+                        <input id="email" class="input-config" type="email" placeholder="user@mail.com" required />
     
-                <div class="form-section">
-
-                    <label id="label-suggestions" class="form-section-title" for="suggestions">Any comments or suggestions?</label>
-                    <textarea id="suggestions" class="input-config" placeholder="Enter your comment here."></textarea>
-
-                </div>
+                    </div>
+                    
+                    <div class="form-section">
     
-                <div class="form-section">
+                        <label id="number-label" class="form-section-title" for="number">Age <small class="extra-info">(optional)</small></label>
+                        <input id="number" class="input-config" type="number" min="18" max="100" placeholder="Your age here" />
+    
+                    </div>
+                    
+                    <div class="form-section">
+    
+                        <label id="label-dropdown-1" class="form-section-title" for="dropdown">Which option best describes your current role?</label>
+                        <select id="dropdown" class="input-config" name="current-role" required>
+                            <option value="" selected disabled>Select Current Role</option>
+                            <option value="Student">Student</option>
+                            <option value="Full Time Job">Full Time Job</option>
+                            <option value="Full Time Learner">Full Time Learner</option>
+                            <option value="Prefer Not to Say">Prefer Not to Say</option>
+                            <option value="Other">Other</option>
+                        </select>
+    
+                    </div>
+        
+                    <div class="form-section">
+    
+                        <p class="form-section-title">Would you recommend freeCodeCamp to a friend?</p>
+    
+                        <label>
+                            <input class="input-button-config" name="recommendation" type="radio" value="definitely" checked> Definitely
+                        </label>
+    
+                        <label>
+                            <input class="input-button-config" name="recommendation" type="radio" value="maybe"> Maybe
+                        </label>
+    
+                        <label>
+                            <input class="input-button-config" name="recommendation" type="radio" value="not-sure"> Not sure
+                        </label>
+    
+                    </div>
+        
+                    <div class="form-section">
+    
+                        <label id="label-dropdown-fav-feature" class="form-section-title" for="dropdown-fav-feature">What is your favorite feature of freeCodeCamp?</label>
+                        <select id="dropdown-fav-feature" class="input-config" name="current-role" required>
+                            <option value="" selected disabled>Select an option</option>
+                            <option value="Challenges">Challenges</option>
+                            <option value="Projects">Projects</option>
+                            <option value="Community">Community</option>
+                            <option value="Open Source">Open Source</option>
+                        </select>
+    
+                    </div>
+        
+                    <div class="form-section">
+    
+                        <p class="form-section-title">What would you like to see improved? (Check all that apply)</p>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="front-end-projects"> Front-end Projects
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="back-end-projects"> Back-end Projects
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="data-visualization"> Data Visualization
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="challenges"> Challenges
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="open-source-community"> Open Source Community
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="gitter-help-rooms"> Gitter Help Rooms
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="videos"> Videos
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="city-meetups"> City Meetups
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="wiki"> Wiki
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="forum"> Forum
+                        </label>
+                        
+                        <label>
+                            <input class="input-button-config" name="skills" type="checkbox" value="additional-courses"> Additional Courses
+                        </label>
+    
+                    </div>
+        
+                    <div class="form-section">
+    
+                        <label id="label-suggestions" class="form-section-title" for="suggestions">Any comments or suggestions?</label>
+                        <textarea id="suggestions" class="input-config" placeholder="Enter your comment here."></textarea>
+    
+                    </div>
+        
+                    <div class="form-section">
+    
+                        <button id="submit">
+                            Submit
+                        </button>
+    
+                    </div>
+    
+                </form>
+    
+            </section>
+    
+        </main>
+    
+        <footer id="footer-doc">
+    
+            <p>
+                Made by 
+                <a href="https://www.linkedin.com/in/pedro-monteiro-218930189/" target="_blank" rel="noreferrer noopener">
+                    <img id="linkedin-icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384088.png" alt="linkedin icon" width="16px">
+                    Pedro Monteiro
+                </a>
+            </p>
+    
+        </footer>
 
-                    <button id="submit">
-                        Submit
-                    </button>
-
-                </div>
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer id="footer">
-
-        <p>
-            Made by 
-            <a href="https://www.linkedin.com/in/pedro-monteiro-218930189/" target="_blank" rel="noreferrer noopener">
-                <img id="linkedin-icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384088.png" alt="linkedin icon" width="16px">
-                Pedro Monteiro
-            </a>
-        </p>
-
-    </footer>
+    </div>  
 
 </body>
 </html>

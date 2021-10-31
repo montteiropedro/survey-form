@@ -6,18 +6,21 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+html, body{
     height: 100%;
-    
+}
+
+body {
     background: linear-gradient(#1d2136cb, #9198e5);
+    background-attachment: fixed;
 
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
     font-style: normal;
-    /* font-weight: 300; */
     color: white;
 
     text-align: center;
@@ -25,11 +28,19 @@ body {
 
 /* BODY ================================================== */
 
+#all-body-content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    height: 100%;
+}
+
 /* section ---------------------------------------- */
 .container {
     margin: 3rem auto;
 
-    height: 100%;
     min-width: 300px;
 }
 
@@ -125,7 +136,7 @@ textarea.input-config {
     background-color: rgb(93, 123, 212);
 }
 
-#footer {
+#footer-doc {
     padding: 0.5rem;
 
     min-width: 300px;
@@ -141,7 +152,7 @@ textarea.input-config {
     color: white;
 }
 
-#footer a {
+#footer-doc a {
     display: flex;
     align-items: center;
     gap: 0.2rem;
@@ -154,7 +165,7 @@ textarea.input-config {
     width: 1rem;
 }
 
-#footer a:hover > #linkedin-icon {
+#footer-doc a:hover > #linkedin-icon {
     transform: scale(1.15);
 }
 
